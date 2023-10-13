@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="section1k">
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">LE GUIDE PRIVÉ <i class="fa-solid fa-sun"></i> NAMIBIE</a>
+        <div class="items">
+            <a href="index.html">ACCUEIL</a>
+            <a href="a-propos.html">À PROPOS</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="services.html">SERVICES</a>
+            <a href="service1.html">FORFAITS</a>
+            <a href="testimonials.html">TÉMOIGNAGES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <img src="images/logo1.png">
+            <p>LE GUIDE PRIVÉ</p>
+            <p>NAMIBIE</p>
+            <li>
+                <a href="index.html"><i class="fa-solid fa-sun"></i>   Accueil</a>
+            </li>
+            <li>
+                <a href="a-propos.html"><i class="fa-solid fa-face-smile"></i>   À Propos</a>
+            </li>
+            <li>
+                <a href="portfolio.html"><i class="fa-solid fa-camera"></i>   Portfolio</a>
+            </li>
+            <li>
+                <a href="services.html"><i class="fa-solid fa-car"></i>   Services</a>
+            </li>
+            <li>
+                <a href="service1.html"><i class="fa-solid fa-hippo"></i>   Forfaits</a>
+            </li>
+            <li>
+                <a href="testimonials.html"><i class="fa-solid fa-comments"></i>   Témoignages</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fa-solid fa-phone-volume"></i>   Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container1k">
+        <div class="section1 clearfix">
+            <div class="textcenter">
+                <h2>CONTACTER</h2>
+                <hr class="separator"></hr> 
+            </div>
+        </div>
+        <div class="section2 clearfix">
+            <div class="col2 column1 first">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
+                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                    <div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+                    <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
+                    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                </div>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 14,
+                            center: new google.maps.LatLng(-22.575028,17.082802),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(-22.575028,17.082802)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Ma position</strong><br>Namibia, Windhoek<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="col2 column2 last">
+                <div class="sec2innercont">
+                    <div class="sec2addr">
+                        <p><span class="collig">Adresse :</span> Namibie, Windhoek, 12324 Rue Abcdef</p>
+                        <p><span class="collig">Téléphone :</span> +1 234 345-6789</p>
+                        <p><span class="collig">Email :</span> mathieu_guide@gmail.com</p>
+                    </div>
+                </div>
+                <div class="sec2contactform">
+                    <h3 class="sec2frmtitle">Voulez-vous en savoir plus? Envoyez-moi un e-mail</h3>
+                    <form action="">
+                        <div class="clearfix">
+                            <input class="col2 first" type="text" placeholder="NOM">
+                            <input class="col2 last" type="text" placeholder="PRÉNOM">
+                        </div>
+                        <div class="clearfix">
+                            <input  class="col2 first" type="Email" placeholder="Email">
+                            <input class="col2 last" type="text" placeholder="Téléphone">
+                        </div>
+                        <div class="clearfix">
+                            <textarea name="textarea" id="" cols="30" rows="7">Votre message ici...</textarea>
+                        </div>
+                        <div class="clearfix">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="link-1" href="#">MATHIEU DUBOIS, LE GUIDE PRIVÉ | NAMIBIE </a>
+                </p>
+                <p>Mathieu Dubois &copy; 2023</p>
+            </div>
+        </footer>
+    </div> 
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
