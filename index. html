@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Index</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="container1a">
+	<div class="topnav" id="myTopnav">
+		<a href="#" class="active">LE GUIDE PRIVÉ <i class="fa-solid fa-sun"></i> NAMIBIE</a>
+		<div class="items">
+			<a href="index.html">ACCUEIL</a>
+			<a href="a-propos.html">À PROPOS</a>
+			<a href="portfolio.html">PORTFOLIO</a>
+			<a href="services.html">SERVICES</a>
+			<a href="service1.html">FORFAITS</a>
+			<a href="testimonials.html">TÉMOIGNAGES</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</div>
+	<div class="sidebar">
+		<ul>
+			<img src="images/logo1.png">
+			<p>LE GUIDE PRIVÉ</p>
+			<p>NAMIBIE</p>
+			<li>
+				<a href="index.html"><i class="fa-solid fa-sun"></i>   Accueil</a>
+			</li>
+			<li>
+				<a href="a-propos.html"><i class="fa-solid fa-face-smile"></i>   À Propos</a>
+			</li>
+			<li>
+				<a href="portfolio.html"><i class="fa-solid fa-camera"></i>   Portfolio</a>
+			</li>
+			<li>
+				<a href="services.html"><i class="fa-solid fa-car"></i>   Services</a>
+			</li>
+			<li>
+				<a href="service1.html"><i class="fa-solid fa-hippo"></i>   Forfaits</a>
+			</li>
+			<li>
+				<a href="testimonials.html"><i class="fa-solid fa-comments"></i>   Témoignages</a>
+			</li>
+			<li>
+				<a href="contact.html"><i class="fa-solid fa-phone-volume"></i>   Contact</a>
+			</li>
+		</ul>
+	</div>
+	<div class="bloc">
+		<img src="images/logo.png">
+		<h1>MATHIEU DUBOIS<br>LE GUIDE PRIVÉ</h1>
+		<h3>Votre guide privé francophone en Namibie</h3>	
+	</div>
+	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
+</body>
+</html>
